@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, sans-serif;
+        }
+        hr{
+            border-color: black; 
+            margin-top: 1mm; 
+            margin-bottom: 1mm;
+        }
+        h1, h3{
+            margin: 0px;
+        }
+        .container{
+            margin: auto;
+            /* background-color: red; */
+            width: 210mm;
+            min-height: 297mm;
+            /* padding: 20mm; */
+        }
+
+        .header{
+            /* background-color: green; */
+            padding-left: 20mm;
+            padding-top: 10mm;
+            /* width: 210mm; */
+        }
+
+        .about{
+            margin-top: 2mm;
+            margin-bottom: 2mm;
+        }
+        .position{
+            margin-top: 5px;
+        }
+
+        .summary{
+            /* background-color: blue; */
+            padding-left: 20mm;
+            padding-right: 20mm;
+            padding-top: 5mm;
+            text-align: justify;
+            margin-bottom: 0px;
+        }
+
+        .experience-part{
+            /* background-color: yellow; */
+            padding-left: 20mm;
+            padding-right: 20mm;
+            padding-top: 5mm;
+            text-align: justify;
+        }
+
+        .experience{
+            margin-bottom: 5mm;
+            page-break-inside: avoid; 
+            page-break-before: auto; 
+            page-break-after: auto; 
+        }
+
+        .exp-info{
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        .project-part{
+            /* background-color: yellow; */
+            padding-left: 20mm;
+            padding-right: 20mm;
+            /* padding-top: 5mm; */
+            text-align: justify;
+        }
+
+        .project{
+            margin-bottom: 5mm;
+            page-break-inside: avoid;
+            page-break-before: auto; 
+            page-break-after: auto;  
+        }
+
+        .project-info{
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        /* Print-specific styles */
+        @media print {
+            @page {
+                margin: 0;
+                size: A4;
+                padding-top: 10mm;
+            }
+            body {
+                margin: 0;
+            }
+            /* .container {
+                /* box-shadow: none; */
+                /* border: none; */
+            /* } */ 
+            /* .footer {
+                display: none;
+            } */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="name">AMMAR SAJJID</h1>
+            <h2 class="position">DATA SCIENTIST</h2>
+
+            <p class="about">Sharjah, UAE | ammar@atbmt.com | <a style="color: black;" href="https://www.linkedin.com/in/ammarsajjid/">Linkedin</a></p>
+            <hr style="margin-right: 20mm; border: 2px solid black;">
+        </div>
+
+
+        <div class="summary">
+            <h3>SUMMARY</h3>
+            <p>Experienced Data Scientist with a demonstrated history of working in the information technology and services industry. Skilled in Python, R, SQL, Machine Learning, and Data Visualization. Strong engineering professional with a Master of Science (MSc) focused in Data Science from University of Southampton.</p>
+        </div>
+
+        <div class="experience-part">
+            <h3>EXPERIENCE</h3>
+            <hr>
+
+            <div class="experience">
+                <div class="exp-info">
+                    <h4>Data Analyst, XYZ Corp, Dubai, UAE</h4>
+                    <h4>June 2017 - April 2019</h4>
+                </div>
+    
+                <div class="exp-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur dolorem non deleniti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur.
+                </div>
+            </div>
+            <div class="experience">
+                <div class="exp-info">
+                    <h4>Data Analyst, XYZ Corp, Dubai, UAE</h4>
+                    <h4>June 2017 - April 2019</h4>
+                </div>
+    
+                <div class="exp-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur dolorem non deleniti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur.
+                </div>
+            </div>
+            <div class="experience">
+                <div class="exp-info">
+                    <h4>Data Analyst, XYZ Corp, Dubai, UAE</h4>
+                    <h4>June 2017 - April 2019</h4>
+                </div>
+    
+                <div class="exp-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur dolorem non deleniti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur.
+                </div>
+            </div>
+            <!-- <div class="experience">
+                <div class="exp-info">
+                    <h4>Data Analyst, XYZ Corp, Dubai, UAE</h4>
+                    <h4>June 2017 - April 2019</h4>
+                </div>
+    
+                <div class="exp-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur dolorem non deleniti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur.
+                </div>
+            </div>
+            <div class="experience">
+                <div class="exp-info">
+                    <h4>Data Analyst, XYZ Corp, Dubai, UAE</h4>
+                    <h4>June 2017 - April 2019</h4>
+                </div>
+    
+                <div class="exp-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur dolorem non deleniti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur.
+                </div>
+            </div>
+            <div class="experience">
+                <div class="exp-info">
+                    <h4>Data Analyst, XYZ Corp, Dubai, UAE</h4>
+                    <h4>June 2017 - April 2019</h4>
+                </div>
+    
+                <div class="exp-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur dolorem non deleniti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur.
+                </div>
+            </div>
+            <div class="experience">
+                <div class="exp-info">
+                    <h4>Data Analyst, XYZ Corp, Dubai, UAE</h4>
+                    <h4>June 2017 - April 2019</h4>
+                </div>
+    
+                <div class="exp-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur dolorem non deleniti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur.
+                </div>
+            </div>
+            <div class="experience">
+                <div class="exp-info">
+                    <h4>Data Analyst, XYZ Corp, Dubai, UAE</h4>
+                    <h4>June 2017 - April 2019</h4>
+                </div>
+    
+                <div class="exp-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur dolorem non deleniti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur.
+                </div>
+            </div>
+            <div class="experience">
+                <div class="exp-info">
+                    <h4>Data Analyst, XYZ Corp, Dubai, UAE</h4>
+                    <h4>June 2017 - April 2019</h4>
+                </div>
+    
+                <div class="exp-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur dolorem non deleniti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur.
+                </div>
+            </div> -->
+
+
+        </div>
+
+        <div class="project-part">
+            <h3>PROJECT</h3>
+            <hr>
+
+            <div class="project">
+                <div class="project-info">
+                    <h4>Data Analyst, XYZ Corp, Dubai, UAE</h4>
+                    <h4>June 2017 - April 2019</h4>
+                </div>
+    
+                <div class="project-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur dolorem non deleniti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur.
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-info">
+                    <h4>Data Analyst, XYZ Corp, Dubai, UAE</h4>
+                    <h4>June 2017 - April 2019</h4>
+                </div>
+    
+                <div class="project-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur dolorem non deleniti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur.
+                </div>
+            </div>
+            <div class="project">
+                <div class="project-info">
+                    <h4>Data Analyst, XYZ Corp, Dubai, UAE</h4>
+                    <h4>June 2017 - April 2019</h4>
+                </div>
+    
+                <div class="project-desc">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur dolorem non deleniti.Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo ea excepturi ullam nesciunt amet obcaecati corrupti veniam commodi? Soluta minima cum ea perferendis quod doloremque odio consectetur.
+                </div>
+            </div>
+
+    </div>
+</body>
+</html>
+
+<script>
+    // select the div with class name header and log its height in mm
+    var header = document.querySelector('.header');
+    // height in mm units
+    console.log(header.offsetHeight / 3.7795275591);
+</script>
